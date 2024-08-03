@@ -1,6 +1,7 @@
 fn main() {
   #[cfg(target_os = "linux")]
   sysrq_trigger();
+  #[cfg(target_os = "windows")]
   bsod::bsod();
 }
 
